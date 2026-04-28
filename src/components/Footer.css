@@ -1,0 +1,145 @@
+.footer {
+    background-color: #052256;
+    /* Darker blue for footer */
+    color: white;
+    padding: 4rem 0 0 0;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    padding-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+    .footer-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.footer-title {
+    color: white;
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    position: relative;
+    display: inline-block;
+}
+
+.footer-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -0.5rem;
+    width: 40px;
+    height: 3px;
+    background-color: var(--accent-red);
+    border-radius: 2px;
+}
+
+.footer-company {
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer-address {
+    font-size: 0.9rem;
+    color: #CBD5E1;
+    line-height: 1.8;
+}
+
+.contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: #CBD5E1;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+}
+
+.contact-item:hover {
+    color: white;
+}
+
+.line-color {
+    color: #00B900;
+}
+
+.fb-color {
+    color: #1877F2;
+}
+
+.download-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.download-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem;
+    width: 100%;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.download-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.btn-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-align: left;
+}
+
+.text-red {
+    color: var(--accent-red);
+}
+
+.text-blue {
+    color: var(--primary-blue);
+}
+
+.btn-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.dl-title {
+    color: var(--text-main);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.dl-format {
+    color: var(--text-muted);
+    font-size: 0.75rem;
+}
+
+.download-btn>svg {
+    color: var(--text-muted);
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1.5rem 0;
+    text-align: center;
+    color: #94A3B8;
+    font-size: 0.85rem;
+}
