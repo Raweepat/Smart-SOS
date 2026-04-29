@@ -54,7 +54,7 @@ const HeroSection = () => {
                 {/* Image/Mockup area */}
                 <div className="hero-image-wrapper">
                     <img
-                        src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?q=80&w=800&auto=format&fit=crop"
+                        src="public/images/1.jpg"
                         alt="Elderly care"
                         className="hero-image"
                     />

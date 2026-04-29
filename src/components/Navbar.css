@@ -47,6 +47,8 @@
     display: none;
     list-style: none;
     gap: 2rem;
+    margin-left: auto;
+    margin-right: 2rem;
 }
 
 .nav-link {
@@ -54,6 +56,24 @@
     font-weight: 500;
     font-size: 0.95rem;
     transition: color 0.2s;
+    position: relative;
+    padding-bottom: 0.25rem;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-blue);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 100%;
 }
 
 .nav-link:hover,

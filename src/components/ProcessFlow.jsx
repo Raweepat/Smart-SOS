@@ -56,6 +56,29 @@ const ProcessFlow = () => {
 
                     </div>
 
+                    {/* Demo Video Section */}
+                    <div className="demo-video-section">
+                        <h3 className="video-title">ดูวิดีโอสาธิตการทำงาน (1 นาที)</h3>
+                        <div className="video-responsive-container">
+                            <div className="video-ratio">
+                                {/* สำหรับวิดีโอจาก YouTube (ใช้ iframe) */}
+                                <iframe 
+                                    src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                                    title="Smart SOS Demo Video" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                    allowFullScreen
+                                ></iframe>
+
+                                {/* สำหรับไฟล์วิดีโอทั่วไป เช่น .mp4 (เอา comment ออกเพื่อใช้งานและลบ iframe ด้านบน) */}
+                                {/* 
+                                <video controls width="100%" height="100%" style={{ position: 'absolute', top: 0, left: 0 }}>
+                                    <source src="/videos/demo-video.mp4" type="video/mp4" />
+                                    Your browser does not support the video tag.
+                                </video>
+                                */}
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
             </div>
