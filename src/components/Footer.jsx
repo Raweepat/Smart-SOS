@@ -41,7 +41,7 @@ const Footer = () => {
                     <div className="footer-section">
                         <h3 className="footer-title">Downloads</h3>
                         <div className="download-list">
-                            <button className="download-btn">
+                            <a href="/documents/Product_Catalog.pdf" download="Product_Catalog.pdf" className="download-btn" style={{ textDecoration: 'none' }}>
                                 <div className="btn-content">
                                     <FileText size={24} className="text-red" />
                                     <div className="btn-text">
@@ -50,8 +50,8 @@ const Footer = () => {
                                     </div>
                                 </div>
                                 <Download size={20} />
-                            </button>
-                            <button className="download-btn">
+                            </a>
+                            <a href="/documents/Proposal_TOR.docx" download="Proposal_TOR.docx" className="download-btn" style={{ textDecoration: 'none' }}>
                                 <div className="btn-content">
                                     <FileText size={24} className="text-blue" />
                                     <div className="btn-text">
@@ -60,7 +60,7 @@ const Footer = () => {
                                     </div>
                                 </div>
                                 <Download size={20} />
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </div>

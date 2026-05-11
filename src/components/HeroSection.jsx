@@ -58,18 +58,7 @@ const HeroSection = () => {
                         alt="Elderly care"
                         className="hero-image"
                     />
-                    {/* Mock Floating UI Element to replicate the mockup feel */}
-                    <div className="floating-card">
-                        <div className="fc-header">
-                            <div className="fc-dot red"></div>
-                            <span>แจ้งเหตุฉุกเฉิน (SOS)</span>
-                        </div>
-                        <div className="fc-body">
-                            <strong>คุณยายสมศรี ใจดี</strong>
-                            <p>กดปุ่ม SOS</p>
-                            <p className="time">เวลา 10:24 น.</p>
-                        </div>
-                    </div>
+
                 </div>
 
             </div>
