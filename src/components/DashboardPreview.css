@@ -180,6 +180,7 @@
     background-color: #E2E8F0;
     border-radius: 0.5rem;
     position: relative;
+    overflow: hidden;
 }
 
 .map-img {

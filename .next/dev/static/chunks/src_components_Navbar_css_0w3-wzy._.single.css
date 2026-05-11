@@ -1,0 +1,147 @@
+/* [project]/src/components/Navbar.css [app-client] (css) */
+.navbar {
+  background-color: var(--card-bg);
+  box-shadow: var(--shadow-sm);
+  z-index: 50;
+  border-bottom: 1px solid var(--border-color);
+  position: sticky;
+  top: 0;
+}
+
+.nav-container {
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  display: flex;
+}
+
+.logo {
+  color: var(--primary-blue);
+  align-items: center;
+  gap: .5rem;
+  text-decoration: none;
+  display: flex;
+}
+
+.logo-icon {
+  color: var(--accent-red);
+}
+
+.logo-text {
+  flex-direction: column;
+  display: flex;
+}
+
+.logo-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.logo-subtitle {
+  color: var(--text-muted);
+  font-size: .75rem;
+  font-weight: 500;
+}
+
+.nav-menu {
+  gap: 2rem;
+  margin-left: auto;
+  margin-right: 2rem;
+  list-style: none;
+  display: none;
+}
+
+.nav-link {
+  color: var(--text-main);
+  padding-bottom: .25rem;
+  font-size: .95rem;
+  font-weight: 500;
+  transition: color .2s;
+  position: relative;
+}
+
+.nav-link:after {
+  content: "";
+  background-color: var(--primary-blue);
+  width: 0;
+  height: 2px;
+  transition: width .3s;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.nav-link:hover:after, .nav-link.active:after {
+  width: 100%;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: var(--primary-blue);
+}
+
+.nav-cta {
+  display: none;
+}
+
+.mobile-menu-btn {
+  color: var(--text-main);
+  cursor: pointer;
+  background: none;
+  border: none;
+  display: block;
+}
+
+.mobile-menu {
+  background-color: var(--card-bg);
+  border-top: 1px solid var(--border-color);
+  width: 100%;
+  box-shadow: var(--shadow-md);
+  padding: 1.5rem;
+  display: none;
+  position: absolute;
+  top: 80px;
+  left: 0;
+}
+
+.mobile-menu.active {
+  display: block;
+}
+
+.mobile-nav-list {
+  flex-direction: column;
+  gap: 1.25rem;
+  list-style: none;
+  display: flex;
+}
+
+.mobile-nav-list a {
+  color: var(--text-main);
+  font-size: 1rem;
+  font-weight: 500;
+  display: block;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .nav-menu {
+    display: flex;
+  }
+
+  .nav-cta {
+    display: block;
+  }
+
+  .mobile-menu-btn {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=src_components_Navbar_css_0w3-wzy._.single.css.map*/

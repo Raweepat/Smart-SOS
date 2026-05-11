@@ -74,7 +74,7 @@ const DashboardPreview = () => {
                                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124021.46467383637!2d100.49015091763262!3d13.729969622838706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e299878ec1fdbb%3A0x6b139943b185ec1e!2sBangkok!5e0!3m2!1sth!2sth!4v1699999999999!5m2!1sth!2sth" 
                                             width="100%" 
                                             height="100%" 
-                                            style={{ border: 0, opacity: 0.7, pointerEvents: 'none', borderRadius: '0.5rem' }} 
+                                            style={{ border: 0, opacity: 0.7, pointerEvents: 'none' }} 
                                             allowFullScreen="" 
                                             loading="lazy" 
                                             referrerPolicy="no-referrer-when-downgrade"

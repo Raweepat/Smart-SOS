@@ -1,0 +1,65 @@
+/* [project]/src/components/BenefitsSection.css [app-client] (css) */
+.benefits-grid {
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  display: grid;
+}
+
+@media (min-width: 640px) {
+  .benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .benefits-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.benefit-card {
+  text-align: center;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+  background: #fff;
+  border-radius: 1rem;
+  padding: 2rem 1.5rem;
+  transition: transform .3s;
+}
+
+.benefit-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-5px);
+}
+
+.bc-icon-wrapper {
+  color: var(--primary-blue);
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  display: flex;
+}
+
+.bc-icon {
+  stroke-width: 1.5px;
+}
+
+.bc-title {
+  color: var(--text-main);
+  flex-direction: column;
+  margin-bottom: .75rem;
+  font-size: 1.1rem;
+  display: flex;
+}
+
+.bc-subtitle {
+  color: var(--text-muted);
+  font-size: .8rem;
+  font-weight: 400;
+}
+
+.bc-desc {
+  color: var(--text-muted);
+  font-size: .9rem;
+}
+
+/*# sourceMappingURL=src_components_BenefitsSection_css_0w3-wzy._.single.css.map*/
